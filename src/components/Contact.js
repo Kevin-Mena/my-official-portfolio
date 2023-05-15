@@ -6,29 +6,37 @@ const Contact = () => {
       <p className="contact-info">
         If you have an application you are interested in developing, a feature
         that you need built or a project that needs coding. I'd love to help
-        with it
+        with it.
       </p>
       <form>
         <div className="labels">
-          <label className="form-label" htmlFor="name">
-            Name
-          </label>
-          <input className="form-control" type="text" id="name" required />
+          <input
+            className="form-control"
+            type="text"
+            id="name"
+            placeholder="Name"
+            required
+          />
         </div>
         <div className="labels">
-          <label className="form-label" htmlFor="email">
-            Email
-          </label>
-          <input className="form-control" type="email" id="email" required />
+          <input
+            className="form-control"
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
         </div>
         <div className="labels">
-          <label className="form-label" htmlFor="message">
-            Message
-          </label>
-          <textarea className="form-control" id="message" required />
+          <textarea
+            className="form-control"
+            id="message"
+            placeholder="Message"
+            required
+          />
         </div>
         <button className="send" type="submit">
-          Get in touch
+          SUBMIT
         </button>
       </form>
     </div>

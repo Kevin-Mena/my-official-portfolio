@@ -261,7 +261,7 @@ nav {
 
 /*
 ===============
-Navbar
+Hero-section
 ===============
 */
 .hero {
@@ -337,4 +337,69 @@ Navbar
 .resume:hover {
     transform: translateY(2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+===============
+Contact
+===============
+*/
+
+
+.form {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.contact-me {
+  color: #ff0077;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-info {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 0;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  outline: none;
+  border-bottom: 2px solid transparent;
+  transition:var(--transition);
+}
+
+.form-control:focus {
+  border-bottom: 1px solid #ff0077;
+}
+
+.send {
+  background-color: #ff0077;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 100%;
 }
