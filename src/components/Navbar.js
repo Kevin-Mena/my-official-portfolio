@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
-  const [activeLink, setActiveLink] = useState("");
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
   const toggleLinks = () => {
@@ -20,9 +19,7 @@ const Navbar = () => {
       linksContainerRef.current.style.height = "0px";
     }
   }, [showLinks]);
-  const handleClick = (id) => {
-    setActiveLink(id);
-  };
+
   return (
     <nav>
       <div className="nav-center">
@@ -30,7 +27,6 @@ const Navbar = () => {
           <NavLink to="/">
             <img src={logo} className="logo" alt="logo" />
           </NavLink>
-
           <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />
           </button>
@@ -58,14 +54,14 @@ const Navbar = () => {
             const { id, url, icon, text } = socialIcon;
             return (
               <li key={id}>
-                <a
+                <NavLink
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
                   data-text={text}
                 >
                   {icon}
-                </a>
+                </NavLink>
               </li>
             );
           })}

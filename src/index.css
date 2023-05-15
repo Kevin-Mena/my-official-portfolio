@@ -74,7 +74,7 @@ h4 {
   font-size: 0.875rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 4rem;
   }
@@ -188,7 +188,7 @@ nav {
   transition: var(--transition);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;
@@ -196,6 +196,11 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+  }
+  .navlink.active {
+      color: #ff0077;
+      border-bottom: 2px solid var(--clr-white);
+      transition: var(--transition);
   }
 
   .nav-header {
@@ -222,6 +227,7 @@ nav {
   .links a:hover {
     padding: 0;
     background: transparent;
+    transform: scale(1.1553);
   }
 
   .social-icons {
@@ -298,8 +304,6 @@ Hero-section
     margin: 10px;
     padding: 10px;
      border-right: 2px solid #FF0077;
-
-  
 }
 
 .intro-position span:first-of-type {

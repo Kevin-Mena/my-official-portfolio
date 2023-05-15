@@ -12,8 +12,8 @@ const Home = () => {
       </h1>
 
       <p className="intro-position">
-        <span>Front-end Developer</span>
-        <span>UI/UX Designer"</span>
+        <span>FRONT-END DEVELOPER</span>
+        <span>UI/UX DESIGNER</span>
       </p>
 
       <a href={myResume} download="KevinOkothResume.pdf" className="resume">
