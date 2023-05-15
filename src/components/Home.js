@@ -1,18 +1,19 @@
-import React from "react";
+import myResume from "../assets/myResume.pdf";
 
 const Home = () => {
   return (
-    <div class="hero">
-      <h5>Hi,</h5>
+    <div className="hero">
+      <h5>HELLO, WORLD.</h5>
       <h1>I'm Kevin Okoth</h1>
 
-      <p class="intro-position">
+      <p className="intro-position">
         <span>Front-end Developer</span>
         <span>UI/UX Designer</span>
       </p>
-      <button type="button" class="resume">
+
+      <a href={myResume} download="KevinOkothResume.pdf" className="resume">
         Get my resume
-      </button>
+      </a>
     </div>
   );
 };
