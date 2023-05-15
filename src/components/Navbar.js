@@ -27,7 +27,10 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} className="logo" alt="logo" />
+          <NavLink to="/">
+            <img src={logo} className="logo" alt="logo" />
+          </NavLink>
+
           <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />
           </button>
@@ -38,13 +41,6 @@ const Navbar = () => {
               const { id, url, text } = link;
               return (
                 <li key={id}>
-                  {/* <a
-                    href={url}
-                    onClick={() => handleClick(id)}
-                    className={activeLink === id ? "active-link" : null}
-                  >
-                    {text}
-                  </a> */}
                   <NavLink
                     to={url}
                     activeClassName="active-navlink"
