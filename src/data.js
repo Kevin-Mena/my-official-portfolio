@@ -1,6 +1,10 @@
 import React from "react";
 import { FaAngellist, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
+import space from "./assets/space.png";
+import bookstore from "./assets/bookstore.png";
+import world from "./assets/world.png";
+import conference from "./assets/conference.png";
 
 export const links = [
   {
@@ -55,38 +59,38 @@ export const social = [
 export const data = [
   {
     id: 1,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
-    name: "maria ferguson",
-    title: "office manager",
+    image: space,
+    name: "Space Traveler's Website",
+    source: "https://github.com/Kevin-Mena/react-group-project",
+    demo: "https://spacetravellersweb.netlify.app/",
     descr:
-      "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
+      "Space Travelers' Hub is a web application that provides commercial and scientific space travel services using the real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions.",
   },
   {
     id: 2,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
-    name: "john doe",
-    title: "regular guy",
+    image: bookstore,
+    name: "Bookstore App",
+    source: "https://github.com/Kevin-Mena/bookstore-app",
+    demo: "https://bookstorecms-app.netlify.app/",
     descr:
-      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.",
+      "Bookstore app is a simple content management system that allows users to display a list of books,add a book and remove a selected book from the book list",
   },
   {
     id: 3,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg",
-    name: "peter smith",
-    title: "product designer",
+    image: world,
+    name: "World Countries Info",
+    source: "https://github.com/Kevin-Mena/world-countries-info",
+    demo: "https://worldcountries-info.netlify.app/",
     descr:
-      "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
+      "World Countries Info webapp is a mobile web application that checks a list of country population from an API and displays them on the web page.It consist of two pages: the first page shows a list of countries that could be filtered by some parameters and the second page shows the country details.",
   },
   {
     id: 4,
-    image:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-    name: "susan andersen",
-    title: "the boss",
+    image: conference,
+    name: "Conference Schedule",
+    source: "https://github.com/Kevin-Mena/Conference-schedule",
+    demo: "https://kevin-mena.github.io/Conference-schedule/",
     descr:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+      "Conference schedule is a forum website where developers can interact and get updates,join and get news about an upcoming developers forum",
   },
 ];

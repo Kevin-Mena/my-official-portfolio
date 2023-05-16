@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const AnimatedLetters = ({ text }) => {
-  const letters = text.split("");
+  const letters = text.split('');
 
   const containerVariants = {
     before: {},

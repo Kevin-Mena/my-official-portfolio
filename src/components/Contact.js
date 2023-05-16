@@ -1,23 +1,30 @@
 import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import AnimatedLetters from "./AnimatedLetters";
-// import emailsjs from "@emailsjs/browser";
+
 const Contact = () => {
   const refForm = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   emailsjs
-  //     .sendForm("gmail", "YOUR_TEMPLATE_URL", refForm.current, "TOKEN")
-  //     .then(
-  //       () => {
-  //         alert("Message successfully sent!");
-  //         window.location.reload(false);
-  //       },
-  //       () => {
-  //         alert("Failed to send the message,please try again!");
-  //       }
-  //     );
-  // };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_4ympn81",
+        "template_9ln2xql",
+        refForm.current,
+        "gROIZrUJ0uBGFlB8J"
+      )
+      .then(
+        () => {
+          alert("Message successfully sent!");
+          refForm.current.reset();
+        },
+        () => {
+          alert("Failed to send the message,please try again!");
+        }
+      );
+  };
 
   return (
     <div className="form">
@@ -30,8 +37,8 @@ const Contact = () => {
         with it."
         />
       </p>
-      <form>
-        {/* <form ref={refForm} onSubmit={sendEmail}> */}
+
+      <form ref={refForm} onSubmit={sendEmail}>
         <div className="labels">
           <input
             className="form-control"

@@ -1,26 +1,40 @@
 import React from "react";
-import { useGlobalContext } from "../context";
 
-const Modal = () => {
-  const { seeProject, closeModal } = useGlobalContext();
+const Modal = ({ project, closeModal }) => {
+  if (!project) {
+    return null;
+  }
 
-  const { image, title, name, desc } = seeProject;
+  const { id, image, name, source, demo, descr } = project;
 
   return (
     <aside className="modal-overlay">
       <div className="modal-container">
-        <img src={image} alt={title} />
-        <div className="modal-content">
-          <h4>{title}</h4>
-          <p>Project description: {desc}</p>
-          <p>{name}</p>
-          <a href="#" target="_blank" rel="noreferrer noopener">
-            See Live:
-          </a>
-          <a href="#" target="_blank" rel="noreferrer noopener">
-            See Source:
-          </a>
-          <button onClick={closeModal}></button>
+        <button type="button" className="close-button" onClick={closeModal}>
+          &times;
+        </button>
+        <img src={image} alt={name} className="modal-image" />
+        <div className="modal-content" key={id}>
+          <h4>{name}</h4>
+          <p className="project-desc">{descr}</p>
+          <div className="modal-buttons">
+            <a
+              href={demo}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="modal-button"
+            >
+              See Live
+            </a>
+            <a
+              href={source}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="modal-button"
+            >
+              See Source
+            </a>
+          </div>
         </div>
       </div>
     </aside>

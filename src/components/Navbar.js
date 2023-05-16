@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
-import { links, social } from "../data";
-import logo from "../logo.svg";
-import { NavLink } from "react-router-dom";
+import React, { useState, useRef, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
+import { links, social } from '../data';
+import logo from '../logo.svg';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
     if (showLinks) {
       linksContainerRef.current.style.height = `${linksHeight}px`;
     } else {
-      linksContainerRef.current.style.height = "0px";
+      linksContainerRef.current.style.height = '0px';
     }
   }, [showLinks]);
 
@@ -51,7 +51,9 @@ const Navbar = () => {
         </div>
         <ul className="social-icons">
           {social.map((socialIcon) => {
-            const { id, url, icon, text } = socialIcon;
+            const {
+              id, url, icon, text,
+            } = socialIcon;
             return (
               <li key={id}>
                 <a
