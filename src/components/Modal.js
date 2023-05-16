@@ -8,7 +8,7 @@ const Modal = ({ project, closeModal }) => {
   const { id, image, name, source, demo, descr } = project;
 
   return (
-    <aside className="modal-overlay">
+    <aside className="modal-overlay" onClick={closeModal}>
       <div className="modal-container">
         <button type="button" className="close-button" onClick={closeModal}>
           &times;
