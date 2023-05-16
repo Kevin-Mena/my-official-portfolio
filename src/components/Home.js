@@ -1,4 +1,4 @@
-import myResume from '../assets/myResume.pdf';
+import myResume from "../assets/myResume.pdf";
 
 const Home = () => (
   <div className="hero">
@@ -7,7 +7,7 @@ const Home = () => (
 
     <p className="intro-position">FRONT-END DEVELOPER</p>
 
-    <a href={myResume} download="KevinOkothResume.pdf" className="resume">
+    <a href={myResume} download="KevinResume.pdf" className="resume">
       Get my resume
     </a>
   </div>
