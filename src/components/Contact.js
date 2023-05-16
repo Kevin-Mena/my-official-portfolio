@@ -1,12 +1,17 @@
 import React from "react";
+import AnimatedLetters from "./AnimatedLetters";
+
 const Contact = () => {
   return (
     <div className="form">
-      <h2 className="contact-me">CONTACT ME</h2>
+      <h2 className="contact-me">CONTACT</h2>
+      <h3>I'd Love To Hear From You.</h3>
       <p className="contact-info">
-        If you have an application you are interested in developing, a feature
+        <AnimatedLetters
+          text="  If you have an application you are interested in developing, a feature
         that you need built or a project that needs coding. I'd love to help
-        with it.
+        with it."
+        />
       </p>
       <form>
         <div className="labels">

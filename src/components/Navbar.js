@@ -54,14 +54,14 @@ const Navbar = () => {
             const { id, url, icon, text } = socialIcon;
             return (
               <li key={id}>
-                <NavLink
+                <a
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
                   data-text={text}
                 >
                   {icon}
-                </NavLink>
+                </a>
               </li>
             );
           })}

@@ -1,20 +1,12 @@
-import AnimatedLetters from "./AnimatedLetters";
 import myResume from "../assets/myResume.pdf";
 
 const Home = () => {
   return (
     <div className="hero">
-      <h5>
-        <AnimatedLetters text="HELLO, WORLD." />
-      </h5>
-      <h1>
-        <AnimatedLetters text="I'm Kevin Okoth" />
-      </h1>
+      <h5>Hi,</h5>
+      <h1>I'm Kevin</h1>
 
-      <p className="intro-position">
-        <span>FRONT-END DEVELOPER</span>
-        <span>UI/UX DESIGNER</span>
-      </p>
+      <p className="intro-position">FRONT-END DEVELOPER</p>
 
       <a href={myResume} download="KevinOkothResume.pdf" className="resume">
         Get my resume
