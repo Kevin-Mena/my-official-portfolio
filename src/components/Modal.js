@@ -1,5 +1,3 @@
-import React from "react";
-
 const Modal = ({ project, closeModal }) => {
   if (!project) {
     return null;

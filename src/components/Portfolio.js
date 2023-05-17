@@ -42,6 +42,7 @@ const Portfolio = () => {
           );
         })}
       </div>
+
       {selectedProject && (
         <Modal project={selectedProject} closeModal={closeModal} />
       )}

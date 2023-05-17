@@ -4,7 +4,6 @@ const About = () => {
       <h2 className="about-me">ABOUT MYSELF</h2>
       <h3>Let me introduce myself.</h3>
       <div className="info-zone">
-        {" "}
         <p className="about-info">
           I'm a very ambitious front-end developer looking for a role in a
           software development company with the opportunity to work with the
@@ -24,7 +23,6 @@ const About = () => {
         </p>
       </div>
       <h3>SKILLS</h3>
-
       <div className="skills">
         <ul className="front-end">
           <h2>Front-End</h2>
