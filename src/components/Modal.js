@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaWindowClose } from "react-icons/fa";
 
 const Modal = ({ project, closeModal }) => {
   if (!project) {
@@ -37,7 +38,7 @@ const Modal = ({ project, closeModal }) => {
       >
         <div className="modal-container">
           <button type="button" className="close-button" onClick={closeModal}>
-            &times;
+            <FaWindowClose />
           </button>
           <img src={image} alt={name} className="modal-image" />
           <div className="modal-content" key={id}>

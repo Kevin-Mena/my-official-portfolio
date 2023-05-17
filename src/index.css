@@ -514,7 +514,7 @@ Portfolio
     right: 1rem;
     font-size: 2rem;
     font-family: bold;
-    background: none;
+    background: transparent;
     border: none;
     color: #ff0077;
     cursor: pointer;
