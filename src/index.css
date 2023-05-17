@@ -103,18 +103,6 @@ h4 {
   }
 }
 
-/* section */
-.section {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: var(--max-width);
-}
-
-@media screen and (min-width: 992px) {
-  .section {
-    width: 95vw;
-  }
-}
 
 /*
 ===============
@@ -352,6 +340,8 @@ Contact
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem 0;
+  text-align: center;
+  padding: 2rem;
 }
 
 .contact-me {
@@ -361,7 +351,7 @@ Contact
 }
 
 .contact-info {
-  color: #888888;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -510,7 +500,7 @@ Portfolio
 
 .modal-container {
     position: relative;
-    background-color: #fff;
+    background: var(--clr-white);
     padding: 1.5rem;
     max-width: 600px;
     width: 90%;

@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <div className="form">
-      <h2 className="contact-me">CONTACT</h2>
+      <h2 className="contact-me">CONTACT ME</h2>
       <h3>I'd Love To Hear From You.</h3>
       <p className="contact-info">
         <AnimatedLetters
@@ -63,7 +63,6 @@ const Contact = () => {
             type="text"
             name="subject"
             placeholder="Subject"
-            required
           />
         </div>
         <div className="labels">
