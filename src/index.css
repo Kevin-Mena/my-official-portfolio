@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lora&family=Montserrat&family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab&display=swap');
 
 :root {
-  /* dark shades of primary color */
+    /*
+    ===============
+    Global Styles
+    ===============
+    */
   --clr-pink: #f07;
   --clr-white: #fff;
   --clr-black: #222;
@@ -15,12 +19,6 @@
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-
-/*
-===============
-Global Styles
-===============
-*/
 
 *,
 ::after,
@@ -484,7 +482,11 @@ Portfolio
 .see-all:hover {
     background-color: #cc005f;
 }
-/* Modal */
+/*
+===============
+Modal
+===============
+*/
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -495,7 +497,7 @@ Portfolio
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 999;
+    z-index: 100;
 }
 
 .modal-container {
@@ -518,7 +520,6 @@ Portfolio
     border: none;
     color: #ff0077;
     cursor: pointer;
-    transition: color 0.3s ease;
 }
 
 .close-button:hover {
@@ -565,7 +566,7 @@ Portfolio
 
 /*
 ===============
-Portfolio
+About
 ===============
 */
 
