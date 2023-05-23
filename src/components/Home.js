@@ -21,13 +21,13 @@ const Home = () => {
       animate="visible"
       variants={heroVariants}
     >
-      <h5>Hi,</h5>
+      <h5>HELLO, WORLD.</h5>
       <h1>I'm Kevin</h1>
 
       <p className="intro-position">FRONT-END DEVELOPER</p>
 
       <a href={myResume} download="KevinResume.pdf" className="resume">
-        Get my resume
+        See my resume
       </a>
     </motion.div>
   );
